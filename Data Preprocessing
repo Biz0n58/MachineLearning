@@ -51,7 +51,7 @@
       "metadata": {
         "id": "KiAH1EQWhBaE"
       },
-      "execution_count": 11,
+      "execution_count": 16,
       "outputs": []
     },
     {
@@ -64,17 +64,24 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "2lo2qCwid3ax"
+      }
+    },
+    {
       "cell_type": "code",
       "source": [
         "dataset = pd.read_csv('Data.csv')\n",
-        "x = dataset.iloc[:, :-1].values\n",
-        "y = dataset.iloc[:, -1].values"
+        "x = dataset.iloc[:, :-1].values # This for all colums without the last cloum we use -1 to remomve the last one\n",
+        "y = dataset.iloc[:, -1].values # Here we use only the last colum"
       ],
       "metadata": {
         "id": "WfDB8sCUilER",
         "collapsed": true
       },
-      "execution_count": 12,
+      "execution_count": 20,
       "outputs": []
     },
     {
@@ -88,9 +95,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "nh87TnkuYdzh",
-        "outputId": "1ace2e45-c2f3-424e-9ff6-ddc8e1b51dbf"
+        "outputId": "12005f29-35ac-42d5-94ce-e60a6aea3ceb"
       },
-      "execution_count": 13,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
@@ -112,9 +119,9 @@
         },
         "collapsed": true,
         "id": "lzZOSt0WYIiD",
-        "outputId": "a24112aa-eb22-441e-c20c-23e6a6711d28"
+        "outputId": "18ff8edb-69de-4a2e-c702-27ee4d165f40"
       },
-      "execution_count": 14,
+      "execution_count": 22,
       "outputs": [
         {
           "output_type": "stream",
@@ -144,9 +151,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Okw2zR89YLs1",
-        "outputId": "ce22fa5d-4f3e-47a4-b40e-3750b618ce7f"
+        "outputId": "120b79ba-892c-4a77-8667-1652e2d9deac"
       },
-      "execution_count": 15,
+      "execution_count": 23,
       "outputs": [
         {
           "output_type": "stream",
